@@ -1,0 +1,319 @@
+/*
+colores: 
+negro #000000
+rojo #ed1616
+gris #4c3c3c
+blanco #fef9f9
+
+
+Fuentes
+font-family: 'Poppins', sans-serif;
+font-family: 'Gentium Plus', serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.cabecera {
+  background-color: black;
+  width: 100%;
+  height: 80%;
+}
+
+.logo {
+  width: 10%;
+  padding-left: 1.25em;
+}
+
+.menu ul {
+  list-style: none;
+  font-family: "Gentium Plus", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0.625em 3.75em;
+}
+
+.menu li a {
+  color: #fef9f9;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+.main-img {
+  width: 100%;
+  height: 80vh;
+}
+
+.bienvenida-h2 {
+  padding: 1.25em 16.875em;
+  color: #4c3c3c;
+}
+
+.bienvenida-p {
+  padding: 1.875em 16.875em;
+}
+
+.bienvenida-links {
+  display: flex;
+  justify-content: center;
+  padding: 1.25em;
+}
+
+/* MAIN */
+
+/* SECTION SOBRE MI  APLICANDO GRIDS*/
+
+.sobremi-div-h2 {
+  text-align: center;
+  color: #4c3c3c;
+  padding: 0.625em;
+}
+
+.descripcion-div {
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0.125em;
+align-items: center;
+}
+
+.descripcion-div-img {
+  width: 100%;
+  padding: 0.625em 6.25em;
+}
+
+.descripcion-div-p {
+  width: 70%;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+/* SECTION SOBRE MI  APLICANDO GRIDS*/
+
+/* SECTION SERVICIOS  APLICANDO GRIDS*/
+
+.titulo-ss {
+  text-align: center;
+  color: #4c3c3c;
+  padding: 0.625em;
+}
+
+.titulo {
+  text-align: center;
+  color: #ed1616;
+  padding: 0.625em;
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 1.25em;
+}
+
+.servicio {
+  padding: 1.25em;
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+}
+
+
+/* BOTONES CON ANIMACIONES */
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #141414;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .4s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton::after {
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+  top: 50%;
+	left: 50%;
+	transition: .4s ease-in-out all;
+  border-radius: 100px;
+  transform-origin: center;
+}
+
+.boton:hover::after {
+  transform: scale(450);
+  background: #ed1616;
+}
+.boton:hover {
+  background-color: #8e0909;
+}
+
+.boton span {
+  position: relative;
+  z-index: 2;
+  transition: .3s ease all;
+}
+
+
+.botones {
+  display: flex;
+  justify-content: center;
+}
+
+/* BOTONES CON ANIMACIONES */
+
+/* SECTION SERVICIOS  APLICANDO GRIDS*/
+
+/* SECTION PRODUCOS */
+
+.s-productos {
+  display: inline;
+}
+
+.s-productos-h2 {
+  text-align: center;
+  color: #4c3c3c;
+}
+
+.s-productos-descrip {
+  display: inline;
+}
+
+.s-productos-descrip h4 {
+  text-align: center;
+  padding: 0.625em;
+}
+
+.s-productos-descrip p {
+  text-align: center;
+}
+
+/* SECTION PRODUCOS */
+
+/* SECTION CONTACTO */
+
+.s-contacto {
+  display: inline;
+}
+
+.s-contacto h2 {
+  text-align: center;
+  color: #4c3c3c;
+  padding: 0.625em;
+}
+.contacto-iconos {
+  display: flex;
+}
+
+.ubicacion {
+  display: flex;
+  padding: 0.625em 1.25em;
+  height: 100%;
+}
+
+.ubicacion img {
+  width: 20%;
+}
+
+.ubicacion p {
+  width: 50%;
+  font-size: 0.625em;
+}
+
+.telefono {
+  display: flex;
+  padding: 0.625em 1.25em;
+  height: 100%;
+}
+
+.telefono img {
+  width: 20%;
+}
+
+.telefono p {
+  width: 50%;
+  font-size: 0.625em;
+}
+
+.reloj {
+  display: flex;
+  padding: 0.625em 1.25em;
+  height: 100%;
+}
+
+.reloj img {
+  width: 20%;
+}
+
+.reloj p {
+  width: 50%;
+  font-size: 0.625em;
+}
+
+/* SECTION CONTACTO */
+
+/* SECTION FOOTER */
+
+.footer {
+  background-color: #000000;
+  padding: 1.875em;
+}
+
+.footer p {
+  color: #fef9f9;
+  text-align: center;
+  font-size: 0.9375em;
+}
+
+/* SECTION FOOTER */
+
+/* Responsive de las 2 secciones */
+
+@media (max-width: 576px) {
+  .servicios {
+    grid-template-columns: 1fr;
+  }
+  .descripcion-div {
+    grid-template-columns: 1fr;
+  }
+  .descripcion-div-p {
+    width: 100%;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+/* Responsive de las 2 secciones */
+
+/* ANIMACIONES */ 
