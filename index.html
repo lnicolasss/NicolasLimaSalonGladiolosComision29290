@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salon Gladiolos</title>
+    <!-- LINK CSS -->
     <link rel="stylesheet" href="./css/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- LINK CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@1&family=Poppins:wght@200&display=swap"
       rel="stylesheet"
@@ -16,34 +17,70 @@
   <body>
     <!-- HEADER -->
 
-    <header class="cabecera">
-      <img
-        class="logo"
-        src="../salon-gladiolos/img/logo.png"
-        alt="logo-salon-gladiolos"
-      />
-      <nav class="menu">
-        <ul>
-          <li><a href="#sobremi"> Sobre Mi </a></li>
-          <li><a href="#servicios"> Servicio </a></li>
-          <li><a href="#productos"> Productos</a></li>
-          <li><a href="#contacto"> Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Salon Gladiolos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#sobremi">Sobre Mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#productos">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80')">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1581404788767-726320400cea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80')">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
     <!-- HEADER -->
 
     <!-- MAIN -->
 
     <main class="main">
-      <div>
-        <img
-          class="main-img"
-          src="../salon-gladiolos/img/portada.png"
-          alt="portada-de-salon-gladiolo"
-        />
-      </div>
+
       <div class="bienvenida">
         <h2 class="bienvenida-h2">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
@@ -178,52 +215,154 @@
 
     <!-- PRODUCTOS -->
 
-    <!-- FOOTER-CONTACTO -->
+    <!-- TESTIMONIOS -->
 
-    <section class="s-contacto" id="contacto">
-      <h2>Contacto</h2>
-      <div class="contacto-iconos">
-        <div class="ubicacion">
-          <img
-            src="../salon-gladiolos/img/icono-ubicacion.png"
-            alt="ubicacion-local"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-            dolorem quisquam placeat aspernatur deserunt, eligendi, quam
-            molestias reprehenderit quo commodi beatae voluptas necessitatibus
-            est deleniti. Sapiente numquam vitae sint ea.
-          </p>
+    <section>
+      <div class="container mt-5 mb-5">
+    
+        <div class="row g-2">
+            <div class="col-md-4">
+                <div class="card p-3 text-center px-4">
+                    
+                    <div class="user-image">
+                        
+                <img src="https://i.imgur.com/PKHvlRS.jpg" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
+                    
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Bruce Hardy</h5>
+                        <span>Software Developer</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                    </div>
+                    
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                
+                <div class="card p-3 text-center px-4">
+                    
+                    <div class="user-image">
+                        
+                <img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
+                    
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Mark Smith</h5>
+                        <span>Web Developer</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                    </div>
+                    
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="col-md-4">
+                
+                <div class="card p-3 text-center px-4">
+                    
+                    <div class="user-image">
+                        
+                <img src="https://i.imgur.com/ACeArwY.jpg" class="rounded-circle" width="80"
+                        >
+                        
+                    </div>
+                    
+                    <div class="user-content">
+                        
+                        <h5 class="mb-0">Veera  Duncan</h5>
+                        <span>Software Architect</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        
+                    </div>
+                    
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
         </div>
-        <div class="telefono">
-          <img src="../salon-gladiolos/img/icono-telefono.png" alt="telefono" />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam id
-            temporibus repellat rem, similique atque sit repellendus quo
-            eligendi? Ipsa provident ducimus itaque sint velit iure minus
-            perspiciatis dolorum adipisci.
-          </p>
-        </div>
-        <div class="reloj">
-          <img src="../salon-gladiolos/img/icono-reloj.png" alt="reloj" />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quis,
-            quam sint debitis natus maiores aliquam maxime, tenetur fuga, odit
-            dicta delectus ducimus autem necessitatibus eius repudiandae iste
-            nam rerum.
-          </p>
-        </div>
-      </div>
+        
+    </div>
     </section>
 
-    <!-- FOOTER-CONTACTO -->
+    <!-- TESTIMONIOS -->
 
-    <!-- FOOTER -->
+    <!-- FOOTER CONTACTO -->
 
-    <footer class="footer">
-      <p>Derechos de autor</p>
-    </footer>
+    <div class="container-fluid" id="contacto">
 
-    <!-- FOOTER -->
+      <div class="row p-5 bg-secondary text-white">
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h3"> Codigo AV </p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-3"> Direccion </p>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+          <p class="h5 mb-3"> Links </p>
+          <div>
+            <a class="text-white text-decoration-none" href="#"> Terminos y Condiciones </a>
+          </div>
+          <div>
+            <a class="text-white text-decoration-none" href="#"> Politicas de Privacidad </a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6
+         col-lg-3">
+          <p class="h5 mb-3"> Contacto </p>
+          <div>
+            <a class="text-white text-decoration-none" href="#"> Instagram </a>
+          </div>
+          <div>
+            <a class="text-white text-decoration-none" href="#"> Facebook </a>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <p class="text-white text-center pt-4" >Coptriht - ALL rights reserved 2020 </p>
+         </div>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER CONTACTO -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
   </body>
 </html>
