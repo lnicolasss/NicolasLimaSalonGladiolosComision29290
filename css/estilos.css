@@ -1,16 +1,4 @@
-/*
-colores: 
-negro #000000
-rojo #ed1616
-gris #4c3c3c
-blanco #fef9f9
-
-
-Fuentes
-font-family: 'Poppins', sans-serif;
-font-family: 'Gentium Plus', serif;
-*/
-
+/* BASES */
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +6,7 @@ font-family: 'Gentium Plus', serif;
   scroll-behavior: smooth;
 }
 
-/* HEADER */
-
+/* LAYOUTS */
 .carousel-item {
   height: 65vh;
   min-height: 350px;
@@ -29,10 +16,6 @@ font-family: 'Gentium Plus', serif;
   -o-background-size: cover;
   background-size: cover;
 }
-
-/* HEADER */
-
-/* MAIN */
 
 .main {
   height: 100%;
@@ -50,7 +33,6 @@ font-family: 'Gentium Plus', serif;
   font-size: 2rem;
   text-align: center;
   padding-bottom: 20px;
-
 }
 
 .bienvenida-p {
@@ -64,10 +46,6 @@ font-family: 'Gentium Plus', serif;
   padding: 1.25em;
 }
 
-/* MAIN */
-
-/* SECTION SOBRE MI  APLICANDO GRIDS*/
-
 .sobremi-div-h2 {
   text-align: center;
   color: #4c3c3c;
@@ -76,10 +54,10 @@ font-family: 'Gentium Plus', serif;
 
 .descripcion-div {
   display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0.125em;
-align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0.125em;
+  align-items: center;
 }
 
 .descripcion-div-img {
@@ -92,10 +70,6 @@ align-items: center;
   font-size: 1.25em;
   text-align: center;
 }
-
-/* SECTION SOBRE MI  APLICANDO GRIDS*/
-
-/* SECTION SERVICIOS  APLICANDO GRIDS*/
 
 .titulo-ss {
   text-align: center;
@@ -112,7 +86,6 @@ align-items: center;
 .servicios {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   gap: 1.25em;
 }
 
@@ -123,38 +96,36 @@ align-items: center;
   grid-template-rows: subgrid;
 }
 
-
 /* BOTONES CON ANIMACIONES */
-
 .boton {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 80px;
-	background: #141414;
-	color: #fff;
-	font-size: 20px;
-	font-weight: 500;
-	border: none;
-	cursor: pointer;
-	text-transform: uppercase;
-	transition: .3s ease all;
-	border-radius: 5px;
-	position: relative;
-	overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background: #141414;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 .boton::after {
-	content: "";
-	width: 1px;
-	height: 1px;
-	background: none;
-	position: absolute;
-	z-index: 1;
+  content: "";
+  width: 1px;
+  height: 1px;
+  background: none;
+  position: absolute;
+  z-index: 1;
   top: 50%;
-	left: 50%;
-	transition: .3s ease-in-out all;
+  left: 50%;
+  transition: 0.3s ease-in-out all;
   border-radius: 100px;
   transform-origin: center;
 }
@@ -163,6 +134,7 @@ align-items: center;
   transform: scale(450);
   background: #ed1616;
 }
+
 .boton:hover {
   background-color: #8e0909;
 }
@@ -170,20 +142,13 @@ align-items: center;
 .boton span {
   position: relative;
   z-index: 2;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
-
 
 .botones {
   display: flex;
   justify-content: center;
 }
-
-/* BOTONES CON ANIMACIONES */
-
-/* SECTION SERVICIOS  APLICANDO GRIDS*/
-
-/* SECTION PRODUCOS */
 
 .s-productos {
   display: inline;
@@ -208,16 +173,12 @@ align-items: center;
 }
 
 /* SECTION PRODUCOS */
-
-/* FOOTER */
-
 .container {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
 }
-
 
 ul {
   list-style: none;
@@ -234,7 +195,7 @@ ul {
 }
 
 .contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
 }
 
 .contact-wrapper > * {
@@ -261,14 +222,14 @@ ul {
 }
 
 .contact-form form .block {
-  grid-column: 1 / 3;
+  grid-column: 1/3;
 }
 
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
   width: 100%;
-  padding: .7em;
+  padding: 0.7em;
   border: none;
   background: none;
   outline: 0;
@@ -292,7 +253,6 @@ ul {
 }
 
 /* CONTACTIO INFO */
-
 .contact-info {
   background: #000;
 }
@@ -306,11 +266,6 @@ ul {
 .hh3 {
   color: #8e0909;
 }
-
-
-/* FOOTER */
-
-
 
 /* RESPONSIVE PAGINA */
 
@@ -355,4 +310,6 @@ ul {
       text-align: left;
   }
 /* Responsive */
+
+/*# sourceMappingURL=estilos.css.map */
 
