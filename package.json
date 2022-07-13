@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/lnicolasss/NicolasLimaSalonGladiolosComision29290/issues"
   },
-  "homepage": "https://github.com/lnicolasss/NicolasLimaSalonGladiolosComision29290#readme"
+  "homepage": "https://github.com/lnicolasss/NicolasLimaSalonGladiolosComision29290#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
 }
